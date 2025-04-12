@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormEICAS</class>
+ <widget class="QWidget" name="FormEICAS">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Window A</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/~/Documents/ProgParallel_Projectva/images/FCTL_EICAS.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;</string>
+  </property>
+  <widget class="QSlider" name="SliderB">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>145</y>
+     <width>45</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider {
+    background: transparent; /* Hacer el fondo general transparente */
+}
+
+QSlider::groove:horizontal {
+    background: lightgray; /* Color de la barra de recorrido horizontal */
+    height: 5px; /* Grosor de la barra de recorrido horizontal */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:horizontal {
+    background: white; /* Color del botón horizontal */
+    border: 1px solid black; /* Borde del botón horizontal */
+    width: 15px; /* Ancho del botón horizontal */
+    margin: -5px 0; /* Ajustar la posición vertical del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::groove:vertical {
+    background: lightgray; /* Color de la barra de recorrido vertical */
+    width: 5px; /* Grosor de la barra de recorrido vertical */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:vertical {
+    background: white; /* Color del botón vertical */
+    border: 1px solid black; /* Borde del botón vertical */
+    height: 15px; /* Altura del botón vertical */
+    margin: 0 -5px; /* Ajustar la posición horizontal del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::add-page:horizontal, QSlider::sub-page:horizontal,
+QSlider::add-page:vertical, QSlider::sub-page:vertical {
+    background: transparent; /* Hacer las páginas (antes y después del botón) transparentes */
+}
+
+QSlider::tick-line:horizontal, QSlider::tick-line:vertical {
+    background: transparent; /* Hacer las líneas de las marcas transparentes */
+}
+
+QSlider::tick:horizontal, QSlider::tick:vertical {
+    background: transparent; /* Hacer las marcas transparentes */
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="SliderA">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>145</y>
+     <width>45</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider {
+    background: transparent; /* Hacer el fondo general transparente */
+}
+
+QSlider::groove:horizontal {
+    background: lightgray; /* Color de la barra de recorrido horizontal */
+    height: 5px; /* Grosor de la barra de recorrido horizontal */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:horizontal {
+    background: white; /* Color del botón horizontal */
+    border: 1px solid black; /* Borde del botón horizontal */
+    width: 15px; /* Ancho del botón horizontal */
+    margin: -5px 0; /* Ajustar la posición vertical del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::groove:vertical {
+    background: lightgray; /* Color de la barra de recorrido vertical */
+    width: 5px; /* Grosor de la barra de recorrido vertical */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:vertical {
+    background: white; /* Color del botón vertical */
+    border: 1px solid black; /* Borde del botón vertical */
+    height: 15px; /* Altura del botón vertical */
+    margin: 0 -5px; /* Ajustar la posición horizontal del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::add-page:horizontal, QSlider::sub-page:horizontal,
+QSlider::add-page:vertical, QSlider::sub-page:vertical {
+    background: transparent; /* Hacer las páginas (antes y después del botón) transparentes */
+}
+
+QSlider::tick-line:horizontal, QSlider::tick-line:vertical {
+    background: transparent; /* Hacer las líneas de las marcas transparentes */
+}
+
+QSlider::tick:horizontal, QSlider::tick:vertical {
+    background: transparent; /* Hacer las marcas transparentes */
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="Slider_C">
+   <property name="geometry">
+    <rect>
+     <x>565</x>
+     <y>140</y>
+     <width>45</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider {
+    background: transparent; /* Hacer el fondo general transparente */
+}
+
+QSlider::groove:horizontal {
+    background: lightgray; /* Color de la barra de recorrido horizontal */
+    height: 5px; /* Grosor de la barra de recorrido horizontal */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:horizontal {
+    background: white; /* Color del botón horizontal */
+    border: 1px solid black; /* Borde del botón horizontal */
+    width: 15px; /* Ancho del botón horizontal */
+    margin: -5px 0; /* Ajustar la posición vertical del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::groove:vertical {
+    background: lightgray; /* Color de la barra de recorrido vertical */
+    width: 5px; /* Grosor de la barra de recorrido vertical */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:vertical {
+    background: white; /* Color del botón vertical */
+    border: 1px solid black; /* Borde del botón vertical */
+    height: 15px; /* Altura del botón vertical */
+    margin: 0 -5px; /* Ajustar la posición horizontal del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::add-page:horizontal, QSlider::sub-page:horizontal,
+QSlider::add-page:vertical, QSlider::sub-page:vertical {
+    background: transparent; /* Hacer las páginas (antes y después del botón) transparentes */
+}
+
+QSlider::tick-line:horizontal, QSlider::tick-line:vertical {
+    background: transparent; /* Hacer las líneas de las marcas transparentes */
+}
+
+QSlider::tick:horizontal, QSlider::tick:vertical {
+    background: transparent; /* Hacer las marcas transparentes */
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="Slider_D">
+   <property name="geometry">
+    <rect>
+     <x>708</x>
+     <y>142</y>
+     <width>45</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider {
+    background: transparent; /* Hacer el fondo general transparente */
+}
+
+QSlider::groove:horizontal {
+    background: lightgray; /* Color de la barra de recorrido horizontal */
+    height: 5px; /* Grosor de la barra de recorrido horizontal */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:horizontal {
+    background: white; /* Color del botón horizontal */
+    border: 1px solid black; /* Borde del botón horizontal */
+    width: 15px; /* Ancho del botón horizontal */
+    margin: -5px 0; /* Ajustar la posición vertical del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::groove:vertical {
+    background: lightgray; /* Color de la barra de recorrido vertical */
+    width: 5px; /* Grosor de la barra de recorrido vertical */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:vertical {
+    background: white; /* Color del botón vertical */
+    border: 1px solid black; /* Borde del botón vertical */
+    height: 15px; /* Altura del botón vertical */
+    margin: 0 -5px; /* Ajustar la posición horizontal del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::add-page:horizontal, QSlider::sub-page:horizontal,
+QSlider::add-page:vertical, QSlider::sub-page:vertical {
+    background: transparent; /* Hacer las páginas (antes y después del botón) transparentes */
+}
+
+QSlider::tick-line:horizontal, QSlider::tick-line:vertical {
+    background: transparent; /* Hacer las líneas de las marcas transparentes */
+}
+
+QSlider::tick:horizontal, QSlider::tick:vertical {
+    background: transparent; /* Hacer las marcas transparentes */
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="Slider_E">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>400</y>
+     <width>45</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider {
+    background: transparent; /* Hacer el fondo general transparente */
+}
+
+QSlider::groove:horizontal {
+    background: lightgray; /* Color de la barra de recorrido horizontal */
+    height: 5px; /* Grosor de la barra de recorrido horizontal */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:horizontal {
+    background: white; /* Color del botón horizontal */
+    border: 1px solid black; /* Borde del botón horizontal */
+    width: 15px; /* Ancho del botón horizontal */
+    margin: -5px 0; /* Ajustar la posición vertical del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::groove:vertical {
+    background: lightgray; /* Color de la barra de recorrido vertical */
+    width: 5px; /* Grosor de la barra de recorrido vertical */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:vertical {
+    background: white; /* Color del botón vertical */
+    border: 1px solid black; /* Borde del botón vertical */
+    height: 15px; /* Altura del botón vertical */
+    margin: 0 -5px; /* Ajustar la posición horizontal del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::add-page:horizontal, QSlider::sub-page:horizontal,
+QSlider::add-page:vertical, QSlider::sub-page:vertical {
+    background: transparent; /* Hacer las páginas (antes y después del botón) transparentes */
+}
+
+QSlider::tick-line:horizontal, QSlider::tick-line:vertical {
+    background: transparent; /* Hacer las líneas de las marcas transparentes */
+}
+
+QSlider::tick:horizontal, QSlider::tick:vertical {
+    background: transparent; /* Hacer las marcas transparentes */
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="Slider_F">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>400</y>
+     <width>45</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider {
+    background: transparent; /* Hacer el fondo general transparente */
+}
+
+QSlider::groove:horizontal {
+    background: lightgray; /* Color de la barra de recorrido horizontal */
+    height: 5px; /* Grosor de la barra de recorrido horizontal */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:horizontal {
+    background: white; /* Color del botón horizontal */
+    border: 1px solid black; /* Borde del botón horizontal */
+    width: 15px; /* Ancho del botón horizontal */
+    margin: -5px 0; /* Ajustar la posición vertical del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::groove:vertical {
+    background: lightgray; /* Color de la barra de recorrido vertical */
+    width: 5px; /* Grosor de la barra de recorrido vertical */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:vertical {
+    background: white; /* Color del botón vertical */
+    border: 1px solid black; /* Borde del botón vertical */
+    height: 15px; /* Altura del botón vertical */
+    margin: 0 -5px; /* Ajustar la posición horizontal del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::add-page:horizontal, QSlider::sub-page:horizontal,
+QSlider::add-page:vertical, QSlider::sub-page:vertical {
+    background: transparent; /* Hacer las páginas (antes y después del botón) transparentes */
+}
+
+QSlider::tick-line:horizontal, QSlider::tick-line:vertical {
+    background: transparent; /* Hacer las líneas de las marcas transparentes */
+}
+
+QSlider::tick:horizontal, QSlider::tick:vertical {
+    background: transparent; /* Hacer las marcas transparentes */
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="Slider_ha">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>490</y>
+     <width>200</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider {
+    background: transparent; /* Hacer el fondo general transparente */
+}
+
+QSlider::groove:horizontal {
+    background: lightgray; /* Color de la barra de recorrido horizontal */
+    height: 5px; /* Grosor de la barra de recorrido horizontal */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:horizontal {
+    background: white; /* Color del botón horizontal */
+    border: 1px solid black; /* Borde del botón horizontal */
+    width: 15px; /* Ancho del botón horizontal */
+    margin: -5px 0; /* Ajustar la posición vertical del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::groove:vertical {
+    background: lightgray; /* Color de la barra de recorrido vertical */
+    width: 5px; /* Grosor de la barra de recorrido vertical */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:vertical {
+    background: white; /* Color del botón vertical */
+    border: 1px solid black; /* Borde del botón vertical */
+    height: 15px; /* Altura del botón vertical */
+    margin: 0 -5px; /* Ajustar la posición horizontal del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::add-page:horizontal, QSlider::sub-page:horizontal,
+QSlider::add-page:vertical, QSlider::sub-page:vertical {
+    background: transparent; /* Hacer las páginas (antes y después del botón) transparentes */
+}
+
+QSlider::tick-line:horizontal, QSlider::tick-line:vertical {
+    background: transparent; /* Hacer las líneas de las marcas transparentes */
+}
+
+QSlider::tick:horizontal, QSlider::tick:vertical {
+    background: transparent; /* Hacer las marcas transparentes */
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="Slider_hb">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>300</y>
+     <width>130</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider {
+    background: transparent; /* Hacer el fondo general transparente */
+}
+
+QSlider::groove:horizontal {
+    background: lightgray; /* Color de la barra de recorrido horizontal */
+    height: 5px; /* Grosor de la barra de recorrido horizontal */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:horizontal {
+    background: white; /* Color del botón horizontal */
+    border: 1px solid black; /* Borde del botón horizontal */
+    width: 15px; /* Ancho del botón horizontal */
+    margin: -5px 0; /* Ajustar la posición vertical del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::groove:vertical {
+    background: lightgray; /* Color de la barra de recorrido vertical */
+    width: 5px; /* Grosor de la barra de recorrido vertical */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:vertical {
+    background: white; /* Color del botón vertical */
+    border: 1px solid black; /* Borde del botón vertical */
+    height: 15px; /* Altura del botón vertical */
+    margin: 0 -5px; /* Ajustar la posición horizontal del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::add-page:horizontal, QSlider::sub-page:horizontal,
+QSlider::add-page:vertical, QSlider::sub-page:vertical {
+    background: transparent; /* Hacer las páginas (antes y después del botón) transparentes */
+}
+
+QSlider::tick-line:horizontal, QSlider::tick-line:vertical {
+    background: transparent; /* Hacer las líneas de las marcas transparentes */
+}
+
+QSlider::tick:horizontal, QSlider::tick:vertical {
+    background: transparent; /* Hacer las marcas transparentes */
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="Slider_G">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>280</y>
+     <width>45</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSlider {
+    background: transparent; /* Hacer el fondo general transparente */
+}
+
+QSlider::groove:horizontal {
+    background: lightgray; /* Color de la barra de recorrido horizontal */
+    height: 5px; /* Grosor de la barra de recorrido horizontal */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:horizontal {
+    background: white; /* Color del botón horizontal */
+    border: 1px solid black; /* Borde del botón horizontal */
+    width: 15px; /* Ancho del botón horizontal */
+    margin: -5px 0; /* Ajustar la posición vertical del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::groove:vertical {
+    background: lightgray; /* Color de la barra de recorrido vertical */
+    width: 5px; /* Grosor de la barra de recorrido vertical */
+    margin: 0px; /* Eliminar márgenes */
+}
+
+QSlider::handle:vertical {
+    background: white; /* Color del botón vertical */
+    border: 1px solid black; /* Borde del botón vertical */
+    height: 15px; /* Altura del botón vertical */
+    margin: 0 -5px; /* Ajustar la posición horizontal del botón */
+    border-radius: 3px; /* Bordes redondeados opcionales */
+}
+
+QSlider::add-page:horizontal, QSlider::sub-page:horizontal,
+QSlider::add-page:vertical, QSlider::sub-page:vertical {
+    background: transparent; /* Hacer las páginas (antes y después del botón) transparentes */
+}
+
+QSlider::tick-line:horizontal, QSlider::tick-line:vertical {
+    background: transparent; /* Hacer las líneas de las marcas transparentes */
+}
+
+QSlider::tick:horizontal, QSlider::tick:vertical {
+    background: transparent; /* Hacer las marcas transparentes */
+}</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber_a">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>320</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLCDNumber {
+    background-color: black; /* Fondo negro oscuro */
+	background: transparent;
+    color: #00ff00; /* Color verde brillante típico de LCD */
+    border: 2px solid #00ff00; /* Borde verde brillante */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    padding: 5px; /* Espacio alrededor del número */
+    font-family: &quot;Monospace&quot;; /* Fuente monoespaciada para un aspecto digital */
+    font-size: 20px; /* Tamaño de la fuente (ajusta según necesidad) */
+    /* Efecto de resplandor (glow) sutil */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Resplandor verde */
+}</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber_b">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>265</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLCDNumber {
+    background-color: black; /* Fondo negro oscuro */
+	background: transparent;
+    color: #00ff00; /* Color verde brillante típico de LCD */
+    border: 2px solid #ffffff; /* Borde verde brillante */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    padding: 5px; /* Espacio alrededor del número */
+    font-family: &quot;Monospace&quot;; /* Fuente monoespaciada para un aspecto digital */
+    font-size: 20px; /* Tamaño de la fuente (ajusta según necesidad) */
+    /* Efecto de resplandor (glow) sutil */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Resplandor verde */
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_FCTL">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: gray; /* Fondo completamente gris */
+	background: gray;;
+    color: white; /* Letra blanca */
+    font-weight: bold; /* Letra en negrita */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesidad) */
+    border: 3px solid white; /* Borde grueso blanco (ajusta el grosor) */
+    border-radius: 5px; /* Bordes ligeramente redondeados (opcional) */
+    padding: 5px 15px; /* Espacio interno alrededor del texto (ajusta según necesidad) */
+}</string>
+   </property>
+   <property name="text">
+    <string>FCTL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_FUEL">
+   <property name="geometry">
+    <rect>
+     <x>132</x>
+     <y>0</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: gray; /* Fondo completamente gris */
+	background: gray;;
+    color: white; /* Letra blanca */
+    font-weight: bold; /* Letra en negrita */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesidad) */
+    border: 3px solid white; /* Borde grueso blanco (ajusta el grosor) */
+    border-radius: 5px; /* Bordes ligeramente redondeados (opcional) */
+    padding: 5px 15px; /* Espacio interno alrededor del texto (ajusta según necesidad) */
+}</string>
+   </property>
+   <property name="text">
+    <string>FUEL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_FIRE">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>0</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: gray; /* Fondo completamente gris */
+	background: gray;;
+    color: white; /* Letra blanca */
+    font-weight: bold; /* Letra en negrita */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesidad) */
+    border: 3px solid white; /* Borde grueso blanco (ajusta el grosor) */
+    border-radius: 5px; /* Bordes ligeramente redondeados (opcional) */
+    padding: 5px 15px; /* Espacio interno alrededor del texto (ajusta según necesidad) */
+}</string>
+   </property>
+   <property name="text">
+    <string>FIRE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_R">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>520</y>
+     <width>87</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00CED1; /* Azul turquesa (puedes ajustar el código de color) */
+    font-weight: bold; /* Hace la letra más gruesa (negrita) */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesites) */
+    background: transparent; /* Hace el fondo transparente */
+    border: none; /* Elimina el borde */
+}</string>
+   </property>
+   <property name="text">
+    <string>RUDDER</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_RF">
+   <property name="geometry">
+    <rect>
+     <x>545</x>
+     <y>250</y>
+     <width>87</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00CED1; /* Azul turquesa (puedes ajustar el código de color) */
+    font-weight: bold; /* Hace la letra más gruesa (negrita) */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesites) */
+    background: transparent; /* Hace el fondo transparente */
+    border: none; /* Elimina el borde */
+}</string>
+   </property>
+   <property name="text">
+    <string>R. FLAP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_LF">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>250</y>
+     <width>87</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00CED1; /* Azul turquesa (puedes ajustar el código de color) */
+    font-weight: bold; /* Hace la letra más gruesa (negrita) */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesites) */
+    background: transparent; /* Hace el fondo transparente */
+    border: none; /* Elimina el borde */
+}</string>
+   </property>
+   <property name="text">
+    <string>L. FLAP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_RA">
+   <property name="geometry">
+    <rect>
+     <x>705</x>
+     <y>250</y>
+     <width>87</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00CED1; /* Azul turquesa (puedes ajustar el código de color) */
+    font-weight: bold; /* Hace la letra más gruesa (negrita) */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesites) */
+    background: transparent; /* Hace el fondo transparente */
+    border: none; /* Elimina el borde */
+}</string>
+   </property>
+   <property name="text">
+    <string>R. AIL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_LA">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>87</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00CED1; /* Azul turquesa (puedes ajustar el código de color) */
+    font-weight: bold; /* Hace la letra más gruesa (negrita) */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesites) */
+    background: transparent; /* Hace el fondo transparente */
+    border: none; /* Elimina el borde */
+}</string>
+   </property>
+   <property name="text">
+    <string>L. AIL</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_RT">
+   <property name="geometry">
+    <rect>
+     <x>585</x>
+     <y>330</y>
+     <width>147</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00CED1; /* Azul turquesa (puedes ajustar el código de color) */
+    font-weight: bold; /* Hace la letra más gruesa (negrita) */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesites) */
+    background: transparent; /* Hace el fondo transparente */
+    border: none; /* Elimina el borde */
+}</string>
+   </property>
+   <property name="text">
+    <string>RUDDER TRIM</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_LE">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>485</y>
+     <width>87</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00CED1; /* Azul turquesa (puedes ajustar el código de color) */
+    font-weight: bold; /* Hace la letra más gruesa (negrita) */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesites) */
+    background: transparent; /* Hace el fondo transparente */
+    border: none; /* Elimina el borde */
+}</string>
+   </property>
+   <property name="text">
+    <string>L. ELEV</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_RE">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>485</y>
+     <width>87</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #00CED1; /* Azul turquesa (puedes ajustar el código de color) */
+    font-weight: bold; /* Hace la letra más gruesa (negrita) */
+    font-size: 18px; /* Tamaño de la letra (ajusta según necesites) */
+    background: transparent; /* Hace el fondo transparente */
+    border: none; /* Elimina el borde */
+}</string>
+   </property>
+   <property name="text">
+    <string>R. ELEV</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="~/Documents/ProgParallel_Projectva/images">
+        <file>FCTL_EICAS.jpg</file>
+        <file>checklist_icon.png</file>
+    </qresource>
+</RCC>
