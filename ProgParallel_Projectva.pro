@@ -4,7 +4,7 @@
 
 TEMPLATE = app
 TARGET = ProgParallel_Projectva
-INCLUDEPATH += .
+INCLUDEPATH += /usr/lib/x86_64-linux-gnu/openmpi/include
 
 QT += core gui widgets
 
@@ -20,3 +20,11 @@ HEADERS += EICAS_Alertas.h EICAS_DataReader.h FCTL_EICAS.h
 FORMS += EICAS_Alertas.ui FCTL_EICAS.ui
 SOURCES += EICAS_DataReader.cpp main.cpp
 RESOURCES += images/images.qrc
+
+# Enlazado con la biblioteca MPI
+LIBS += -lmpi
+LIBS += -lmpi_cxx # Si usas la interfaz C++
+
+# Configuración para la compilación y enlazado de MPI (opcional pero recomendado)
+CONFIG += link_pkgconfig
+PKGCONFIG += ompi
